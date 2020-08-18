@@ -11,18 +11,6 @@
     "test:watch": "jest --watch",
     "seed": "node ./db/seed.js"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    },
-    "setupFilesAfterEnv": [
-      "jest-enzyme"
-    ],
-    "testEnvironment": "enzyme",
-    "testEnvironmentOptions": {
-      "enzymeAdapter": "react16"
-    }
-  },
   "dependencies": {
     "axios": "^0.19.2",
     "babel-jest": "^26.2.2",
@@ -41,9 +29,13 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest-styled-components": "^7.0.2",
+    "style-loader": "^1.2.1",
+    "styled-components": "^5.1.1",
     "webpack-cli": "^3.3.12"
   }
 }
